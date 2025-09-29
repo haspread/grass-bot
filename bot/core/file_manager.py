@@ -3,7 +3,7 @@ import json
 
 def get_all_lines(filepath: str):
     with open(filepath, 'r') as file:
-        lines = file.readlines()
+        lines = file.readlines() 
 
     if not lines:
         return []
@@ -29,3 +29,4 @@ def save_list_to_file(filepath: str, list_: list):
     with open(filepath, mode="w", encoding="utf-8") as file:
         for item in list_:
             file.write(f"{item['session_name']}.session\n")
+
